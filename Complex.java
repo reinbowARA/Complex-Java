@@ -3,17 +3,18 @@ public class Complex {
 
     Complex(){
         System.out.println("Введите действительную и мнимую часть комплексного числа:");
-
     }
-    Complex(double _Re, double _Im){
-        Re = _Re;
-        Im = _Im;
-
+    public Complex(double Re, double Im){
+        this.Re = Re;
+        this.Im = Im;
     }
+    public void SetReal(double Real){this.Re = Real;}
     double GetRe() {return Re;}
+    public void SetImg(double Imges){this.Im = Imges;}
     double GetIm() {return Im;}
 
-    double ComplexABS(double Re, double Im){
+
+    double ComplexABS(){
         var a = Math.pow(Re, 2); 
         var b = Math.pow(Im, 2); 
         double c = a + b;
@@ -22,7 +23,8 @@ public class Complex {
         return ModuleCompl;
     }
 
-    double ArgComplex(double Re, double Im){
+    double ArgComplex(){
+        System.out.print("Аргумент комплексного числа: ");
         double argComplex;
         if (Re > 0 && Im > 0) {//1
             argComplex = Math.atan(Im/Re);
@@ -61,25 +63,8 @@ public class Complex {
             return 0;
         }
     }
-
-    double ReComplexPlus(double Re1, double Re2){
-        double Re3;
-        Re3 = Re1 + Re2;
-        return Re3;
-    }
-    double ImComplexPlus(double Im1, double Im2){
-        double Im3;
-        Im3 = Im1 + Im2;
-        return Im3;
-    }
-    double ReComplexMinus(double Re1, double Re2){
-        double Re3;
-        Re3 = Re1 - Re2;
-        return Re3;
-    }
-    double ImComplexMinus(double Im1, double Im2){
-        double Im3;
-        Im3 = Im1 + Im2;
-        return Im3;
-    }
+    double ADDRe(double Real){return Re + Real;} 
+    double ADDIm(double Imges){return Im + Imges;}
+    double SUBRe(double Real){return Re - Real;}
+    double SUBIm(double Imges){return Im - Imges;} 
 }
