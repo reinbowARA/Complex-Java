@@ -24,7 +24,9 @@ public class TestComplex {
         System.out.print("Im1 = ");
         Im1 = in.nextDouble();
 
-        System.out.println(comp.ADDRe(Re1)+"+"+"("+comp.ADDIm(Im1)+"i"+")");
-        System.out.println(comp.SUBRe(Re1)+"+"+"("+comp.SUBIm(Im1)+"i"+")");
+        //System.out.println(comp.ADDRe(Re1)+"+"+"("+comp.ADDIm(Im1)+"i"+")");
+        //System.out.println(comp.SUBRe(Re1)+"+"+"("+comp.SUBIm(Im1)+"i"+")");
+        comp.ADDsout(Re1, Im1);
+        comp.SUBsout(Re1, Im1);
     }
 }

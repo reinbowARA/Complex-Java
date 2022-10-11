@@ -67,4 +67,15 @@ public class Complex {
     double ADDIm(double Imges){return Im + Imges;}
     double SUBRe(double Real){return Re - Real;}
     double SUBIm(double Imges){return Im - Imges;} 
+
+    double ADDsout(double Re1, double Im1){
+
+        System.out.println( ADDRe(Re1)+"+"+"("+ADDIm(Im1)+"i"+")");
+        return 0;
+    }
+    double SUBsout(double Re1, double Im1){
+
+        System.out.println(SUBRe(Re1)+"+"+"("+SUBIm(Im1)+"i"+")");
+        return 0;
+    }
 }
